@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0s;
+    border-radius: 10px;
+}
+
+
+
+
+
+body{
+    background: rgb(64, 147, 138);
+
+}
+
+header{
+    background: rgb(3,4,40);
+    background: linear-gradient(90deg, rgb(2, 3, 31) 0%, #16378bcc 32%, rgb(194, 59, 129) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    color: antiquewhite;
+    
+}
+img{
+    height: 80px;
+}
+nav{
+    display: inline-block;
+}
+
+a{
+    padding: 20px;
+    margin: 25px;
+}
+
+a:hover{
+    background:  #02031f;
+    color: rgb(173, 84, 84);
+} 
+
+#logoNombre{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+
