@@ -1,12 +1,26 @@
-*{
-    margin: 0;
-    padding: 0s;
-    border-radius: 10px;
+#todo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 
 
 
+
+*{
+    margin: 0;
+    padding: 0s;
+    border-radius: 2px;
+
+
+}
+
+
+#nom{
+    margin: 15px;
+}
 
 body{
     background: rgb(64, 147, 138);
@@ -21,21 +35,23 @@ header{
     align-items: center;
     height: 100px;
     color: antiquewhite;
+    grid-column: 1 /8;
+    grid-row: 1 ;
     
 }
-img{
+#imgLogo{
     height: 80px;
 }
 nav{
     display: inline-block;
 }
 
-a{
+.nav{
     padding: 20px;
     margin: 25px;
 }
 
-a:hover{
+.nav:hover{
     background:  #02031f;
     color: rgb(173, 84, 84);
 } 
@@ -47,3 +63,151 @@ a:hover{
 
 }
 
+
+
+
+
+
+
+
+
+
+
+#conPrin{
+    grid-column: 2 / 7;
+    grid-row: 3 / 14;
+    border: solid 2px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+
+}
+
+
+
+#cajaTituloPrin{
+    grid-column: 1;
+    grid-row: 1;
+}
+#tituloPrin{
+    font-size: 50px;
+    text-align: center;
+}
+
+#seccion1{
+
+    margin: 10px;
+    grid-column: 1 ;
+    grid-row: 2/4;
+
+}
+
+
+
+
+#seccion1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+
+}
+
+#article1{
+    grid-column: 2 ;
+    grid-row: 1;
+    margin: auto;
+}
+#article4{
+    grid-column: 1 ;
+    margin: auto;
+    grid-row: 1;
+}
+#article3{
+    margin: auto;
+    grid-column: 3 ;
+    grid-row: 1;
+}
+
+
+.cosas{
+    padding: 20px;
+}
+
+
+.sub{
+    text-align: center;
+    
+}
+
+.imgArticle{
+    width: 60px;
+    height: 80px;
+    display: flex;
+    margin: 5px auto ;
+}
+
+.textSub{
+    text-align: justify ;
+}
+
+
+
+
+
+
+#seccion2{
+    margin: 0 20px;
+    border: 2px solid;
+    grid-column: 1;
+    grid-row: 5 / 7;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+
+}
+
+iframe{
+    padding: 40px;
+    grid-column: 1;
+    grid-row: 1;
+    width: 400px;
+}
+
+.article2{
+    padding: 40px;
+
+    text-align: justify;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+
+footer{
+    border-top: solid;
+    grid-column: 2/7;
+    grid-row: 13 ;
+
+}
+
+#desarrollador{
+    text-align: center;
+}
+
+#blockImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.imgFooter{
+    padding: 5px;
+}
