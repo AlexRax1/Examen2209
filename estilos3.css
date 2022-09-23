@@ -1,9 +1,4 @@
-#todo{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 5px;
-    grid-auto-rows: minmax(100px, auto);
-}
+
 /* separaaremos toda la pagina en 7 partes con el grid */
 
 
@@ -42,8 +37,6 @@ header{
     align-items: center;
     height: 100px;
     color: antiquewhite;
-    grid-column: 1 /8;
-    grid-row: 1 ;
     
 }
 #imgLogo{
@@ -80,17 +73,12 @@ nav{
 
 /* Contenedor principal que esta centrado */
 
-#conPrin{
-    grid-column: 2 / 7;
-    grid-row: 3 / 16;
-    border: solid 2px;
-}
 
-main{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-    grid-auto-rows: minmax(100px, auto);
+#contenedor{
+
+    margin: 150px 250px 0 250px;
+
+    border: solid black 2px;
     
 
 }
@@ -98,8 +86,7 @@ main{
 
 /* Titulo */
 #cajaTituloPrin{
-    grid-column: 1;
-    grid-row: 1;
+    height: 100px;
 }
 #tituloPrin{
     font-size: 50px;
@@ -110,18 +97,10 @@ main{
 
 
 
-/* Se trabaja la primera seccion */
-#seccion1{
 
+
+#seccion1{
     margin: 10px;
-    grid-column: 1 ;
-    grid-row: 2/4;
-    /* Se marca donde va a estar ubicado con el grid */
-
-}
-
-
-#seccion1{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
@@ -180,8 +159,7 @@ main{
 #seccion2{
     margin: 0 20px;
     border: 2px solid;
-    grid-column: 1;
-    grid-row: 5 / 7;
+
 /* Se ubica con el grid del main, y se vuelve a crear otro grid dentro de el esta vez en 2 partes */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -211,10 +189,10 @@ iframe{
 
 /* Se trabaja la secicon 3 */
 #seccion3{
-    grid-column: 1;
-    grid-row: 7 / 10;
+
 /* Se ubica con el grid del main, y se vuelve a crear otro grid dentro de el esta vez en 5 partes */
     display: grid;
+    margin: 0 20px;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
     grid-auto-rows: minmax(100px, auto);
@@ -254,21 +232,21 @@ iframe{
 
 /* Se trabaja el footer */
 footer{
-    border-top: solid;
-    grid-column: 2/7;
-    grid-row: 15 ;
+    border: solid;
+    margin: 20px;
 
 }
 
 #desarrollador{
     text-align: center;
+    margin: 10px;
 }
 
 #blockImg{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
+    margin: 10px;
 }
 
 .imgFooter{
